@@ -10,6 +10,7 @@ router.register(r'courses', CourseViewSet)
 router.register(r'mentors', MentorViewSet)
 
 urlpatterns = [
+     path('', admin.site.urls),
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
     path('url/', include(router.urls)),
